@@ -54,9 +54,16 @@ function chMod(file, mode) {
   }));
 }
 
-const defaultBinaryVersion = '1.0.0';
+const defaultBinaryVersion = '1.2.0';
 
 const platforms = [
+  {
+    platform: 'darwin',
+    arch: 'arm64',
+    pkg: 'macosx-universal.tgz',
+    bin: 'macosx',
+    sha: 'c9f8192149ebc88f8699998cecab1ce144144045907ece6f53cf50877f4de66f'
+  },
   {
     platform: 'darwin',
     arch: 'x64',
